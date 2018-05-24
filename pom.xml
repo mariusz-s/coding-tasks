@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pl.msaldak.hrtasks</groupId>
+    <groupId>pl.softwarie.codingtasks</groupId>
     <artifactId>coding-tasks</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>coding-tasks</name>
-    <description>Tasks from https://www.hackerrank.com platform and interview books.</description>
+    <description>Tasks from various coding platforms and interview books.</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
