@@ -10,19 +10,13 @@ public class ReverseInt {
             return 0;
         }
         int abs = Math.abs(x);
-        byte[] digits = new byte[(int) Math.log10(abs) + 1];
+        byte digits = (byte) (Math.log10(abs) + 1);
         byte sign = x > 0 ? (byte) 1 : (byte) -1;
-        byte i = 0;
-        x = abs;
-        while (x != 0) {
-            digits[i] = (byte) (x % 10);
-            i++;
-            x = x / 10;
-        }
         x = 0;
         try {
-            for (byte digit : digits) {
-                x = Math.addExact(x, Math.multiplyExact(digit, (int) Math.pow(10, --i)));
+            while (abs != 0) {
+                x = Math.addExact(x, Math.multiplyExact(abs % 10, (int) Math.pow(10, --digits)));
+                abs = abs / 10;
             }
         } catch (ArithmeticException exc) {
             return 0;
