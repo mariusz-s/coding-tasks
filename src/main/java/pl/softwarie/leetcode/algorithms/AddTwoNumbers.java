@@ -29,7 +29,7 @@ public class AddTwoNumbers {
         return root.next;
     }
 
-    public static class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
 
