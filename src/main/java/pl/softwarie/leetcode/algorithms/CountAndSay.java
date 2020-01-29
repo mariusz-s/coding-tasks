@@ -1,5 +1,8 @@
 package pl.softwarie.leetcode.algorithms;
 
+/**
+ * https://leetcode.com/problems/count-and-say/
+ */
 public class CountAndSay {
 
     public String countAndSay(int n) {
