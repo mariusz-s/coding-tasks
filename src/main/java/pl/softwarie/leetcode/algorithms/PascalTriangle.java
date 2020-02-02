@@ -3,6 +3,9 @@ package pl.softwarie.leetcode.algorithms;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://leetcode.com/problems/pascals-triangle
+ */
 public class PascalTriangle {
     public List<List<Integer>> generate(int n) {
         if (n <= 0) {
