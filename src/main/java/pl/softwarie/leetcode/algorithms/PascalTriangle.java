@@ -11,19 +11,19 @@ public class PascalTriangle {
         if (n <= 0) {
             return new ArrayList<>();
         }
-        List<Integer> lastRow = new ArrayList<>();
+        List<Integer> newRow = new ArrayList<>();
         if (n == 1) {
             List<List<Integer>> result = new ArrayList<>();
-            lastRow.add(1);
-            result.add(lastRow);
+            newRow.add(1);
+            result.add(newRow);
             return result;
         }
         List<List<Integer>> previousResult = generate(n - 1);
         List<Integer> previousRow = previousResult.get(previousResult.size() - 1);
         for (int i = 0; i < n; i++) {
-            lastRow.add(getOrDefault(previousRow, i - 1) + getOrDefault(previousRow, i));
+            newRow.add(getOrDefault(previousRow, i - 1) + getOrDefault(previousRow, i));
         }
-        previousResult.add(lastRow);
+        previousResult.add(newRow);
         return previousResult;
     }
 
