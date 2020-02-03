@@ -1,4 +1,4 @@
-package pl.softwarie.leetcode.algorithms;
+package pl.softwarie.leetcode.algorithms.easy;
 
 public class MergeTwoSortedLists {
 

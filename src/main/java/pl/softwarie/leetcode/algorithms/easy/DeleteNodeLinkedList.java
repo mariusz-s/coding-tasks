@@ -1,4 +1,4 @@
-package pl.softwarie.leetcode.algorithms;
+package pl.softwarie.leetcode.algorithms.easy;
 
 /**
  * https://leetcode.com/problems/delete-node-in-a-linked-list/

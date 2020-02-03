@@ -1,4 +1,4 @@
-package pl.softwarie.leetcode.algorithms;
+package pl.softwarie.leetcode.algorithms.medium;
 
 /**
  * https://leetcode.com/problems/add-two-numbers/submissions/
