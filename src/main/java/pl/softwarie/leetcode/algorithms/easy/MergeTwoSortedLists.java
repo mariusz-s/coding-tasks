@@ -1,5 +1,7 @@
 package pl.softwarie.leetcode.algorithms.easy;
 
+import pl.softwarie.leetcode.algorithms.ListNode;
+
 public class MergeTwoSortedLists {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
@@ -26,14 +28,5 @@ public class MergeTwoSortedLists {
         }
 
         return head.next;
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }

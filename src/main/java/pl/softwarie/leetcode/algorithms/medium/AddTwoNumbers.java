@@ -1,5 +1,7 @@
 package pl.softwarie.leetcode.algorithms.medium;
 
+import pl.softwarie.leetcode.algorithms.ListNode;
+
 /**
  * https://leetcode.com/problems/add-two-numbers/submissions/
  */
@@ -27,14 +29,5 @@ public class AddTwoNumbers {
             node.next = new ListNode(overflow);
         }
         return root.next;
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }

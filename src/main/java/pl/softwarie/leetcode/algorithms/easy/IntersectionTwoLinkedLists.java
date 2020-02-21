@@ -1,5 +1,7 @@
 package pl.softwarie.leetcode.algorithms.easy;
 
+import pl.softwarie.leetcode.algorithms.ListNode;
+
 /**
  * https://leetcode.com/problems/intersection-of-two-linked-lists/
  */
@@ -12,15 +14,5 @@ public class IntersectionTwoLinkedLists {
             b = (b != null) ? b.next : headA;
         }
         return a;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
     }
 }

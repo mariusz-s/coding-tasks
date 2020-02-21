@@ -1,5 +1,7 @@
 package pl.softwarie.leetcode.algorithms.easy;
 
+import pl.softwarie.leetcode.algorithms.ListNode;
+
 /**
  * https://leetcode.com/problems/remove-duplicates-from-sorted-list/
  */
@@ -19,14 +21,5 @@ public class RemoveDuplicatesSortedList {
             node = node.next;
         }
         return node;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }

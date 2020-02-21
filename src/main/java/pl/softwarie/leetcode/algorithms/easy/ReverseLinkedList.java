@@ -1,5 +1,7 @@
 package pl.softwarie.leetcode.algorithms.easy;
 
+import pl.softwarie.leetcode.algorithms.ListNode;
+
 /**
  * https://leetcode.com/problems/reverse-linked-list/
  */
@@ -16,14 +18,5 @@ public class ReverseLinkedList {
             current = next;
         }
         return prev;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }

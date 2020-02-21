@@ -1,5 +1,7 @@
 package pl.softwarie.leetcode.algorithms.easy;
 
+import pl.softwarie.leetcode.algorithms.ListNode;
+
 /**
  * https://leetcode.com/problems/delete-node-in-a-linked-list/
  */
@@ -11,14 +13,5 @@ public class DeleteNodeLinkedList {
         }
         node.val = node.next.val;
         node.next = node.next.next;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }
