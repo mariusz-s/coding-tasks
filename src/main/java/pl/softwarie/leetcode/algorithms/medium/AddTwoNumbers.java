@@ -1,6 +1,6 @@
 package pl.softwarie.leetcode.algorithms.medium;
 
-import pl.softwarie.leetcode.algorithms.ListNode;
+import pl.softwarie.leetcode.algorithms.common.ListNode;
 
 /**
  * https://leetcode.com/problems/add-two-numbers/submissions/

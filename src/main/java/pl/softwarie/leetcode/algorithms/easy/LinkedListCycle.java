@@ -1,6 +1,6 @@
 package pl.softwarie.leetcode.algorithms.easy;
 
-import pl.softwarie.leetcode.algorithms.ListNode;
+import pl.softwarie.leetcode.algorithms.common.ListNode;
 
 /**
  * https://leetcode.com/problems/linked-list-cycle
