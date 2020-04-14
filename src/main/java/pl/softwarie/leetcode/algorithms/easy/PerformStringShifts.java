@@ -15,13 +15,11 @@ public class PerformStringShifts {
             }
         }
         count = count % s.length();
-        while (count > 0) {
-            s = s.substring(1) + s.charAt(0);
-            count--;
-        }
-        while (count < 0) {
-            s = s.charAt(s.length() - 1) + s.substring(0, s.length() - 1);
-            count++;
+        if (count > 0) {
+            s = s.substring(count) + s.substring(0, count);
+        } else if (count < 0) {
+            count = count * -1;
+            s = s.substring(s.length() - count) + s.substring(0, s.length() - count);
         }
         return s;
     }
