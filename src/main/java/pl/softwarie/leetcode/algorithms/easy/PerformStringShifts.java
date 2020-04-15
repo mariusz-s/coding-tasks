@@ -17,7 +17,7 @@ public class PerformStringShifts {
         count = count % s.length();
         if (count > 0) {
             s = s.substring(count) + s.substring(0, count);
-        } else if (count < 0) {
+        } else {
             count = count * -1;
             s = s.substring(s.length() - count) + s.substring(0, s.length() - count);
         }
