@@ -1,5 +1,7 @@
 package pl.softwarie.leetcode.algorithms.easy;
 
+import pl.softwarie.leetcode.algorithms.common.TreeNode;
+
 /**
  * https://leetcode.com/problems/path-sum/
  */
@@ -25,15 +27,5 @@ public class PathSum {
         }
         return hasPathSum(node.left, sum, current + node.val)
                 || hasPathSum(node.right, sum, current + node.val);
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }
