@@ -7,16 +7,16 @@ import pl.softwarie.leetcode.algorithms.common.ListNode;
  */
 public class ReverseLinkedList {
 
-    public ListNode reverseList(ListNode node) {
-        ListNode prev = null;
-        ListNode current = node;
+    public ListNode reverseList(ListNode head) {
+        ListNode previous = null;
+        ListNode current = head;
         ListNode next;
         while (current != null) {
             next = current.next;
-            current.next = prev;
-            prev = current;
+            current.next = previous;
+            previous = current;
             current = next;
         }
-        return prev;
+        return previous;
     }
 }
