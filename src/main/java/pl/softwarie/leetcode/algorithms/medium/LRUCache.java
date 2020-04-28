@@ -8,12 +8,12 @@ import java.util.Map;
  */
 public class LRUCache {
 
-    Map<Integer, Integer> map;
-    int cap;
+    private Map<Integer, Integer> map;
+    private int capacity;
 
     public LRUCache(int capacity) {
-        map = new LinkedHashMap<>(capacity);
-        cap = capacity;
+        this.map = new LinkedHashMap<>(capacity);
+        this.capacity = capacity;
     }
 
     public int get(int key) {
@@ -28,11 +28,9 @@ public class LRUCache {
 
     public void put(int key, int value) {
         if (map.containsKey(key)) {
-
             map.remove(key);
-        } else if (map.size() == cap) {
-            Map.Entry<Integer, Integer> entry = map.entrySet().iterator().next();
-            int first = entry.getKey();
+        } else if (map.size() == capacity) {
+            int first = map.entrySet().iterator().next().getKey();
             map.remove(first);
         }
         map.put(key, value);
