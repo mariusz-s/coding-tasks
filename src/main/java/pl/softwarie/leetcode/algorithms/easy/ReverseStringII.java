@@ -10,12 +10,12 @@ public class ReverseStringII {
             return s;
         }
         char[] a = s.toCharArray();
-        for (int start = 0; start < a.length; start += 2 * k) {
-            int i = start, j = Math.min(start + k - 1, a.length - 1);
-            while (i < j) {
-                char tmp = a[i];
-                a[i++] = a[j];
-                a[j--] = tmp;
+        for (int index = 0; index < a.length; index += 2 * k) {
+            int start = index, end = Math.min(index + k - 1, a.length - 1);
+            while (start < end) {
+                char tmp = a[start];
+                a[start++] = a[end];
+                a[end--] = tmp;
             }
         }
         return String.valueOf(a);
