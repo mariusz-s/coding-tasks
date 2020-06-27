@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * https://leetcode.com/problems/online-stock-span/
  */
-public class OnlineStockSpam {
+public class OnlineStockSpan {
 
     private final Stack<Pair> stack = new Stack<>();
 
