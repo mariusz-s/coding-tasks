@@ -16,7 +16,7 @@
         <java.version>1.8</java.version>
         <assertj.version>3.2.0</assertj.version>
         <assertjjava8.version>1.0.0m1</assertjjava8.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencies>
